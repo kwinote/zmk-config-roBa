@@ -101,7 +101,7 @@
         Shortcut {
             bindings = <
 &kp LC(LA(DELETE))  &kp LA(F4)  &kp LC(E)  &kp LC(R)  &kp LC(T)                            &kp TAB      &kp HOME        &kp UP_ARROW  &kp END        &kp LC(P)
-&kp LC(A)           &kp LC(S)   &none      &kp LC(F)  &none            &none       &trans  &kp LC(TAB)  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &trans
+&kp LC(A)           &kp LC(S)   &none      &kp LC(F)  &kp RC(G)        &none       &trans  &kp LC(TAB)  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &trans
 &kp LC(Z)           &kp LC(X)   &kp LC(C)  &kp LC(V)  &kp PRINTSCREEN  &trans      &trans  &none        &kp RA(LEFT)    &none         &kp RA(RIGHT)  &kp LC(RIGHT_BRACKET)
 &trans              &trans      &trans     &trans     &trans           &trans      &trans  &trans                                                    &trans
             >;
