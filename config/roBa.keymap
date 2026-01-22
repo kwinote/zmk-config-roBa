@@ -105,12 +105,12 @@
             >;
         };
 
-        NUM+Fn {
+        NUM,Mark {
             bindings = <
-&kp F9  &kp F10  &kp F11  &kp F12  &kp MINUS                      &kp COLON  &kp N7        &kp N8        &kp N9        &kp SLASH
-&kp F5  &kp F6   &kp F7   &kp F8   &kp EQUAL  &none       &trans  &kp PLUS   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans
-&kp F1  &kp F2   &kp F3   &kp F4   &kp ASTRK  &trans      &trans  &kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD
-&trans  &trans   &trans   &trans   &trans     &trans      &trans  &trans                                               &trans
+&kp N1             &kp N2     &kp N3     &kp N4     &kp N5                         &kp N6   &kp N7        &kp N8        &kp N9        &kp N0
+&kp APOS           &kp SEMI   &kp EQUAL  &kp PLUS   &kp ASTRK  &trans      &trans  &kp N0   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &trans
+&kp DOUBLE_QUOTES  &kp COLON  &kp UNDER  &kp MINUS  &kp SLASH  &trans      &trans  &kp DOT  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans
+&trans             &trans     &trans     &trans     &trans     &trans      &trans  &trans                                             &trans
             >;
         };
 
