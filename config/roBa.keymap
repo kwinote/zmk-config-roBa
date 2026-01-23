@@ -88,10 +88,10 @@
 
         default_layer {
             bindings = <
-&kp Q     &kp W         &kp E        &kp R      &kp T                                                             &kp Y        &kp U  &kp I            &kp O                &kp P
-&kp A     &kp S         &kp D        &kp F      &kp G        &kpmkp RA(GRAVE) MB2           &kpmkp RA(ENTER) MB2  &kp H        &kp J  &kp K            &kp L                &kp BSPC
-&kp Z     &kp X         &kp C        &kp V      &kp B        &mkp MB1                       &mkp MB1              &kp N        &kp M  &mt SLASH COMMA  &mt QUESTION PERIOD  &mt RIGHT_ALT DELETE
-&kp LALT  &kp LEFT_WIN  &lt 6 MINUS  &lt 3 TAB  &lt 2 ENTER  &mt LEFT_SHIFT LANGUAGE_2      &mt RCTRL LANGUAGE_1  &lt 1 SPACE                                               &lt 5 ESC
+&kp Q     &kp W           &kp E             &kp R         &kp T                                                                  &kp Y        &kp U        &kp I              &kp O                &kp P
+&kp A     &mt LEFT_ALT S  &mt LEFT_SHIFT D  &mt LCTRL F   &kp G            &kpmkp RA(GRAVE) MB2      &mkp MB2                    &kp H        &mt RCTRL J  &mt RIGHT_SHIFT K  &mt RIGHT_ALT L      &kp ENTER
+&kp Z     &kp X           &kp C             &kp V         &kp B            &mkp MB1                  &mkp MB1                    &kp N        &kp M        &mt SLASH COMMA    &mt QUESTION PERIOD  &kp TAB
+&kp LALT  &kp LEFT_SHIFT  &kp LEFT_WIN      &lt 3 DELETE  &lt 2 BACKSPACE  &mt LCTRL LANGUAGE_2      &mt RIGHT_SHIFT LANGUAGE_1  &lt 1 SPACE                                                       &lt 5 ESC
             >;
         };
 
@@ -115,10 +115,10 @@
 
         Mark {
             bindings = <
-&kp EXCL          &kp AT_SIGN      &kp HASH           &kp DOLLAR             &kp PERCENT                      &kp CARET  &kp AMPERSAND  &kp BACKSLASH  &kp GRAVE  &none
-&kp LESS_THAN     &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &none        &trans      &trans  &none      &none          &none          &none      &trans
-&kp GREATER_THAN  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &none        &trans      &trans  &none      &none          &none          &none      &trans
-&trans            &trans           &trans             &trans                 &trans       &trans      &trans  &trans                                              &trans
+&kp EXCL          &kp AT_SIGN      &kp HASH           &kp DOLLAR             &kp PERCENT                      &kp CARET      &kp AMPERSAND      &kp BACKSLASH  &kp GRAVE              &kp LA(F4)
+&kp LESS_THAN     &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &none        &trans      &trans  &kp LC(LS(Q))  &kp LS(LA(LC(A)))  &kp LC(SEMI)   &kp LC(LEFT_BRACKET)   &trans
+&kp GREATER_THAN  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &none        &trans      &trans  &none          &kp LS(LA(LC(X)))  &kp LC(COLON)  &kp LC(RIGHT_BRACKET)  &trans
+&trans            &trans           &trans             &trans                 &trans       &trans      &trans  &trans                                                                  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
