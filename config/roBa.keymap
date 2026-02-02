@@ -46,6 +46,15 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        kpmkp: kpmkp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "KPMKP";
+            bindings = <&kp>, <&mkp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+        };
     };
 
     keymap {
@@ -53,10 +62,10 @@
 
         default_layer {
             bindings = <
-&kp Q     &kp W      &kp E     &kp R         &kp T                                                             &kp Y        &kp U  &kp I            &kp O                &kp P
-&kp A     &kp S      &kp D     &kp F         &kp G            &kp LA(S)            &mkp MB2                    &kp H        &kp J  &kp K            &kp L                &kp ENTER
-&kp Z     &kp X      &kp C     &kp V         &kp B            &mkp MB1             &mkp LCLK                   &kp N        &kp M  &mt SLASH COMMA  &mt QUESTION PERIOD  &kp TAB
-&kp LALT  &kp LSHFT  &kp LGUI  &lt 3 DELETE  &lt 2 BACKSPACE  &mt LCTRL LANG2      &mt RIGHT_SHIFT LANGUAGE_1  &lt 1 SPACE                                               &lt 5 ESCAPE
+&kp Q     &kp W      &kp E     &kp R             &kp T                                                              &kp Y        &kp U        &kp I            &kp O                &kp P
+&kp A     &kp S      &kp D     &mt LEFT_SHIFT F  &kp G            &kpmkp LA(S) MB2      &mkp MB2                    &kp H        &mt RCTRL J  &kp K            &kp L                &kp ENTER
+&kp Z     &kp X      &kp C     &kp V             &kp B            &mkp MB1              &mkp LCLK                   &kp N        &kp M        &mt SLASH COMMA  &mt QUESTION PERIOD  &kp TAB
+&kp LALT  &kp LSHFT  &kp LGUI  &lt 3 DELETE      &lt 2 BACKSPACE  &mt LCTRL LANG2       &mt RIGHT_SHIFT LANGUAGE_1  &lt 1 SPACE                                                     &lt 5 ESCAPE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -93,10 +102,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                &trans
+&none   &none   &none   &none   &none                       &none   &none  &none  &none  &none
+&none   &none   &none   &none   &none   &trans      &trans  &none   &none  &none  &none  &trans
+&none   &none   &none   &none   &none   &trans      &trans  &none   &none  &none  &none  &none
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                       &trans
             >;
         };
 
