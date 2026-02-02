@@ -1,5 +1,12 @@
 #include "roBa.dtsi"
 
+/ {
+    zip_temp_layer: zip_temp_layer {
+        compatible = "zmk,input-processor-temp-layer";
+        #input-processor-cells = <2>;
+    };
+};
+
 &default_transform {
     col-offset = <6>;
 };
