@@ -92,7 +92,7 @@
         ARROW {
             bindings = <
 &kp EXCLAMATION   &kp AT_SIGN      &kp HASH           &kp DOLLAR             &kp PERCENT                        &kp CARET      &kp AMPERSAND      &kp NON_US_BACKSLASH  &kp GRAVE              &kp RA(F4)
-&kp LESS_THAN     &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp PAGE_UP    &trans      &trans  &kp LC(LS(Q))  &kp LS(LC(A))      &kp LC(SEMI)          &kp LC(LEFT_BRACKET)   &trans
+&kp LESS_THAN     &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp PAGE_UP    &trans      &trans  &kp LC(LS(Q))  &kp LS(LC(LA(A)))  &kp LC(SEMI)          &kp LC(LEFT_BRACKET)   &trans
 &kp GREATER_THAN  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp PAGE_DOWN  &trans      &trans  &none          &kp LA(LC(LS(X)))  &kp LC(COLON)         &kp LC(RIGHT_BRACKET)  &trans
 &trans            &trans           &trans             &trans                 &trans         &trans      &trans  &trans                                                                         &trans
             >;
