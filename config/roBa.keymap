@@ -88,8 +88,6 @@
 &kp LS(GT)    &kp LS(RBRC)  &kp RBKT       &kp LS(RPAR)  &kp PAGE_DOWN  &trans      &trans  &none          &kp LS(LC(LA(X)))  &none      &kp LC(RIGHT_BRACKET)  &kp LC(COLON)
 &trans        &trans        &trans         &trans        &trans         &trans      &trans  &trans                                                              &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
         MOUSE {
